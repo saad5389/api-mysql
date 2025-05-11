@@ -1,9 +1,9 @@
 const knex = require("knex");
 
 const connectedKnex = knex({
-  client: "sqlite3",
+  client: "mysql",
   connection: {
-    filename: "booksdb.sqlite3"
+    filename: "data.sql"
   }
 });
 
